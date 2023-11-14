@@ -13,7 +13,7 @@ This repository contains an Express.js application designed to demonstrate the s
 This application was created for educational purposes to highlight the importance of validating and sanitizing user inputs in web applications, especially when dealing with system-level operations.
 
 ## Related Article
-For an in-depth discussion and analysis of the concepts and vulnerabilities explored in this code, please refer to my comprehensive article on LinkedIn. You can read the article here: [Intro to Command Injection](#).
+For an in-depth discussion and analysis of the concepts and vulnerabilities explored in this code, please refer to my comprehensive article on LinkedIn. You can read the article here: [Intro to Command Injection](https://www.linkedin.com/pulse/intro-command-injection-daniel-scott-fykmf/).
 
 ## Installation and Usage
 - Clone the repository.
