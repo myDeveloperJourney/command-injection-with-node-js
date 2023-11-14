@@ -15,6 +15,8 @@ This application was created for educational purposes to highlight the importanc
 ## Related Article
 For an in-depth discussion and analysis of the concepts and vulnerabilities explored in this code, please refer to my comprehensive article on LinkedIn. You can read the article here: [Intro to Command Injection](https://www.linkedin.com/pulse/intro-command-injection-daniel-scott-fykmf/).
 
+If the link above doesn't work, it's probably because you're not subscribed to my newsletter. [Please click here to subscribe](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7037147055806439424)
+
 ## Installation and Usage
 - Clone the repository.
 - Run `npm install` to install dependencies.
