@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Acme FTP Buddy</title>
 </head>
 <body>
-    <h1>File Explorer App</h1>
-    <p>Type a filepath below to inspect contents</p>
+    <h1>Acme FTP Buddy</h1>
+    <p>Type a filepath to a folder below to inspect it's contents</p>
     <form action="/execute" method="post">
         <input type="text" name="filepath">
-        <input type="submit" value="Execute">
+        <input type="submit" value="Search">
     </form>
-    <p><%= filepath %></p>
+    
+    <% if(error) { %>
+        <p><%= error %></p>
+    <% } %>
+
+    <p><%= filepath ? `You entered: ${filepath}` : 'Waiting for input'%></p>
+    
+    <% if (stdout) { %>
     <ul>
         <% stdout.forEach(f => { %>
             <li><%= f %></li>
         <% }) %>
     </ul>
+    <% } %>
+
 </body>
 </html>

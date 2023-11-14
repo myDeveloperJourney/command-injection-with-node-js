@@ -1,23 +1,25 @@
-# Intro to Command Injection
--
-Command Injection is a critical concern for web application security. In this presenation I'll delve into how this common vulnerability can compromise web applications and why it's vital for developers to be aware of it. Through a demonstration using a Node/Express application, we'll explore both the risks and the effective strategies to mitigate them. By the end of this presentation my objective is that you gain not only awareness but also practical insights into safeguarding your web applications against such threats
+# Command Injection Demonstration in Express Application
 
-## Learning Objectives:
-By the end of this presenation, attendees should be able to:
-1. Understand the concept of Command Injection
-2. Identify the impact of Command Injection
-3. Recognize common vunerabilities in Web Applications
-4. Learn how to prevent Command Injection'
-5. Utilize resources for further learning
+## Overview
+This repository contains an Express.js application designed to demonstrate the security implications of command injection vulnerabilities. The code showcases how unsanitized user input in system commands can pose significant security risks, and provides a practical example of mitigating these risks through input validation and the use of safer methods like `execFile`.
 
-## What is Command Injection?
+## Features
+- Basic Express.js server setup.
+- EJS for dynamic content rendering.
+- Demonstration of a command injection vulnerability using `exec`.
+- Implemented security enhancements with input validation and `execFile`.
 
-Command Injection is a type of Web Application vunerability when a hacker exploits an ability to execute system-level commands through the application. This typically happens when a hacker injects malicious commands in areas of the application that are intended for user input such as form fields for text inputs or file uploads. Even URL params can be exploited from this vunerability. These malicious commands are then executed by the application on the host operating system in order to gain control of the system. Learning how to prevent this vunerability is crucial maintaining the security of Web Applications.
+## Security Note
+This application was created for educational purposes to highlight the importance of validating and sanitizing user inputs in web applications, especially when dealing with system-level operations.
 
-## Demonstration: A simple example of the command injection vunerability using `node/express`
+## Related Article
+For an in-depth discussion and analysis of the concepts and vulnerabilities explored in this code, please refer to my comprehensive article on LinkedIn. You can read the article here: [Intro to Command Injection](#).
 
-## Demonstration: How we can resolve the issue
+## Installation and Usage
+- Clone the repository.
+- Run `npm install` to install dependencies.
+- Start the server with `node app.js`.
+- Access the application through `http://localhost:3000`.
 
-## Conclusion
-
-# Resources
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

@@ -1,8 +1,8 @@
 {
   "name": "intro-to-command-injection",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Command Injection is a critical concern for web application security. In this presenation I'll delve into how this common vulnerability can compromise web applications and why it's vital for developers to be aware of it. Through a demonstration using a Node/Express application, we'll explore both the risks and the effective strategies to mitigate them. By the end of this presentation my objective is that you gain not only awareness but also practical insights into safeguarding your web applications against such threats",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -13,5 +13,6 @@
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {}
 }
