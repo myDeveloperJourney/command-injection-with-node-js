@@ -4,9 +4,12 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-app.
+app.set('view engine', 'ejs');
+
+app.use(express.urlencoded({ extended: false }));
+
 
 
 app.listen(PORT, () => {
-    console.log(`Express is listening on http://localhost:${PORT}`)
+    console.log(`Express is listening on port:${PORT}`)
 });
