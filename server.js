@@ -9,7 +9,15 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index', { filepath: null, stdout: null });
+});
+
+app.post('/execute', (req, res) => {
+    const filepath = req.body.filepath
+    exec(`ls ${filepath}`, (error, stdout, stderr) => {
+        console.log(stdout)
+        res.render('index', { filepath, stdout: stdout.split('\n')});
+    });
 });
 
 
